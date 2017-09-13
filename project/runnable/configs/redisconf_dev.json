@@ -1,0 +1,14 @@
+{
+  "name": "mymaster",
+  "sentinels": [{"host": "127.0.0.1", "port": 26379}],
+  "password": "pwd",
+  "connectTimeout": 2000,
+  "db": 0,
+  "keepAlive": 0,
+  "enableReadyCheck": true,
+  "autoResubscribe": true,
+  "autoResendUnfulfilledCommands": true,
+  "lazyConnect": false,
+  "keyPrefix": "",
+  "reconnectOnError": null
+}

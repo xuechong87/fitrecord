@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>图片滑动（跑马灯，左右）</title>
+    <style type="text/css">
+        .moveDiv{width:800px;height:200px;border:1px solid seagreen;overflow:hidden;margin:10px auto;}
+        .moveDiv ul{margin:0;padding:0;}
+        .moveDiv ul li{list-style:none;float:left;width:200px;height:200px;}
+        .moveDiv ul li div{padding:10px;margin:10px;border:1px solid salmon;}
+        .btn{text-align:center;}
+        .btn .on{color:#000020;}
+    </style>
+</head>
+<body>
+<div id="moveDiv1" class="moveDiv">
+    <ul>
+        <li><div>111</div></li>
+        <li><div>222</div></li>
+        <li><div>333</div></li>
+        <li><div>444</div></li>
+        <li><div>555</div></li>
+        <li><div>666</div></li>
+        <li><div>777</div></li>
+        <li><div>888</div></li>
+    </ul>
+</div>
+<div class="btn">
+    <a id="pre1" class="btn-l" href="javascript:void(0)"><<</a>
+    <a id="next1" class="btn-r" href="javascript:void(0)">>></a>
+</div>
+
+<div id="moveDiv2" class="moveDiv">
+    <ul>
+        <li><div>111</div></li>
+        <li><div>222</div></li>
+        <li><div>333</div></li>
+        <li><div>444</div></li>
+        <li><div>555</div></li>
+        <li><div>666</div></li>
+        <li><div>777</div></li>
+        <li><div>888</div></li>
+        <li><div>999</div></li>
+    </ul>
+</div>
+<div class="btn">
+    <a id="pre2" class="btn-l" href="javascript:void(0)"><<</a>
+    <a id="next2" class="btn-r" href="javascript:void(0)">>></a>
+</div>
+
+<div id="moveDiv3" class="moveDiv">
+    <ul>
+        <li><div>111</div></li>
+        <li><div>222</div></li>
+        <li><div>333</div></li>
+        <li><div>444</div></li>
+        <li><div>555</div></li>
+        <li><div>666</div></li>
+        <li><div>777</div></li>
+        <li><div>888</div></li>
+        <li><div>999</div></li>
+    </ul>
+</div>
+<div class="btn">
+    <a id="pre3" class="btn-l" href="javascript:void(0)"><<</a>
+    <a id="next3" class="btn-r" href="javascript:void(0)">>></a>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="sliding.js"></script>
+<script type="text/javascript">
+    //写css时，ul最好不要有补白边框等
+   jQuery("#moveDiv1").sliding({
+        width:200,//加上边框、补白的总宽度
+        num:8,
+        speed:3,
+        pre:$("#pre1"),
+        next:$("#next1")
+    });
+    jQuery("#moveDiv2").sliding({
+        width:800,//加上边框、补白的总宽度
+        num:3,
+        speed:3,
+        pre:$("#pre2"),
+        next:$("#next2")
+    });
+    jQuery("#moveDiv3").sliding({
+        width:200,//加上边框、补白的总宽度
+        num:9,
+        speed:3,
+        circle:true,
+        pre:$("#pre3"),
+        next:$("#next3")
+    });
+</script>
+</body>
+</html>

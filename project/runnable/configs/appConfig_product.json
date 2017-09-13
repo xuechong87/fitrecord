@@ -1,0 +1,9 @@
+{
+  "envMode":"product",
+  "contextPath":"fitrecord",
+  "protocol":"http",
+  "serverPort":80,
+  "staticResourceVersion":"${staticResourceVersion}",
+  "dubboVersion":"127.0.0.1",
+  "zkip":"127.0.0.1"
+}

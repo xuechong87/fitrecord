@@ -1,0 +1,7 @@
+{
+  "varControls" : ["<$", "$>"],
+  "tagControls" : ["<%", "%>"],
+  "cmtControls" : ["<#", "#>"],
+  "cache" : false,
+  "autoescape" : false
+}

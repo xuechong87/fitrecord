@@ -1,0 +1,21 @@
+{
+  "apps": [
+    {
+      "instances": 5,
+      "max_memory_restart":"100M",
+      "name": "fitrecord${version}",
+      "script": "runnable/startup.js",
+      "log_date_format": "YYYY-MM-DD HH:mm:SS",
+      "log_file": "../pm2logs/app_fitrecord$.log",
+
+      "error_file": "../pm2logs/app_fitrecord$_err.log",
+      "out_file": "../pm2logs/app_fitrecord$_out.log",
+      "pid_file": "../pm2logs/app_fitrecord$.pid",
+      "merge_logs": true,
+      "watch": false,
+      "pm2_logrotates":{
+        "max_size":"10M"
+      }
+    }
+  ]
+}

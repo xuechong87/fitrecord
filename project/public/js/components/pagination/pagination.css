@@ -1,0 +1,11 @@
+.iv-pagination{width:100%;overflow:hidden;font-family: "microsoft yahei";letter-spacing: -3px;-moz-user-select:none; -webkit-user-select:none; -ms-user-select:none; -khtml-user-select:none; user-select:none;}
+.iv-pagination a{position:relative;display:block;float:left;margin:0 3px;text-decoration: none;color: #666;letter-spacing: normal;}
+.iv-pagination span{display:block;padding:0;text-decoration:none;border: 1px solid #e1e2e3;width: 30px; height: 30px;line-height: 31px; text-align: center;font-size: 14px;border-radius: 2px;}
+.iv-pagination .pi{font-weight: 800;font-size: 18px;line-height: 28px;}
+.iv-pagination .pt{width: 42px; font-size: 12px;}
+.iv-pagination a:hover{color: #f60;}
+.iv-pagination a:hover span{border: 1px solid #f60;}
+.iv-pagination .current,.iv-pagination .current:hover{color: #fff;}
+.iv-pagination .current span,.iv-pagination .current:hover span{background: #f60;border: 1px solid #f60;}
+.iv-pagination .dispage,.iv-pagination .dispage:hover{color:#999;}
+.iv-pagination .dispage span,.iv-pagination .dispage:hover span{background:#f3f3f3;border: 1px solid #e1e2e3; }

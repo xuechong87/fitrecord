@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>分页</title>
+    <link href="pagination.css" rel="stylesheet">
+</head>
+<body>
+    <h1>分页</h1>
+    <div id="J_pageInfo" style="text-align: center;width: 600px;padding: 20px 0">第1页</div>
+    <div id="J_pagination" class="iv-pagination"></div>
+    <script type="text/javascript" src="../../libs/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="pagination.js"></script>
+    <script type="text/javascript">
+        var page = new Pagination({
+            $ele      : $("#J_pagination"),//页码$dom对象
+            totalPage : 2, //总页数
+            shownPage : 5, //显示出来的页数
+            currentPageNum: 1,
+            callbackFn:function(){
+                $("#J_pageInfo").html("第"+page.currentPageNum+"页");
+            } //切换页面后的callbackFn
+        });
+    </script>
+</body>
+</html>

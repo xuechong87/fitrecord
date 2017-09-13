@@ -1,0 +1,6 @@
+.iv-scroll{overflow:hidden;position:relative;}
+.iv-scroll-bar{position: absolute;z-index:999;top:0;height:100%;right:6px;width:1px;font:0px Arial;background:#7bf;}
+.iv-scroll-bluek{position: absolute;z-index:4;right:-5.5px;top:0;width:12px;height:20px;border-radius: 6px;background:#7bf;}
+.iv-scroll-left{right:auto;left:6px;}
+.iv-scroll-right{left:auto;right:6px;}
+.iv-no-select{-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
