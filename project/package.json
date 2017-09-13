@@ -11,8 +11,6 @@
     "cookies": "^0.6.1",
     "debug": "~2.2.0",
     "express": "~4.13.4",
-    "hessian-proxy": "0.0.5",
-    "ioredis": "^2.2.0",
     "log4js": "^0.6.38",
     "morgan": "~1.7.0",
     "node-zookeeper-client": "^0.2.2",

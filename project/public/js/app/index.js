@@ -7,7 +7,7 @@ function indexRender(){
 }
 indexRender.prototype = {
     init: function(){
-        $(".container").html(index_tpl.render({data:"Hi"}));
+        //$(".container").html(index_tpl.render({data:"Hi"}));
     }
 };
 new indexRender();
